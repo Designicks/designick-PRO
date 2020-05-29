@@ -458,41 +458,51 @@ input:checked + .slider:before {
 }    
 #solution .solution-cover{}
 
-
-#solution .owl-theme .owl-item:nth-child(9),#solution .owl-theme .owl-item:nth-child(10) {
-  display: none;
-}
-#solution .owl-carousel .owl-stage-outer {
+#solution .solution-carousel .owl-stage-outer {
   padding: 0 1rem;
 }
-#solution .owl-carousel .owl-stage {
+#solution .solution-carousel .owl-stage {
   padding: 2rem 0px;
 }
-#solution .owl-carousel .owl-item .solution-item img {
+#solution .solution-carousel .owl-item{
+  margin-left: -3px;  
+}
+#solution .solution-carousel .owl-item .solution-item img {
   max-width: 150px;
+  width: 100%;
   margin: 0 auto;
 }
-#solution .owl-carousel .owl-item .solution-item{
+#solution .solution-carousel .owl-item .solution-item{
   height: 240px;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(1, 1, 1, 0);
+  transition: all 0.3s;
 }
-#solution .owl-carousel .owl-item .solution-item h6{
+/*#solution .owl-carousel .owl-item.active:nth-child(2)  .solution-item{*/
+#solution .solution-carousel .owl-item.active.center .item .solution-item{
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid #2072fe;
+}
+#solution .solution-carousel .owl-item .solution-item:hover{
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid #2072fe;
+}
+#solution .solution-carousel .owl-item .solution-item h6{
   text-align: center; 
   padding: 0.5rem 0;
 }
 #solution .owl-theme .owl-nav{
   text-align: right;
 }
-#solution .owl-carousel .owl-nav button.owl-prev,.owl-carousel .owl-nav button.owl-next{
+#solution .solution-carousel .owl-nav button.owl-prev,.solution-carousel .owl-nav button.owl-next{
   background: none !important;
   padding: 0px 10px !important;
   color: #2072fe !important;
   font-size: 50px !important;
 
 }
-#solution .owl-carousel .owl-nav button.owl-prev span,.owl-carousel .owl-nav button.owl-next span{}
+#solution .solution-carousel .owl-nav button.owl-prev span,.solution-carousel .owl-nav button.owl-next span{}
 
 
 /*??CLIENT*/
@@ -524,6 +534,99 @@ input:checked + .slider:before {
 }
 
 /*??CLIENT*/
+
+
+/*CHAT BOT*/
+#chatbot .chatbot-inner{
+  position: fixed;
+   bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+#chatbot .chatbot-inner #input { 
+  border: 0; 
+  padding: 5px; 
+  border-radius: 10px;
+  border: 1px solid #421; 
+}
+#chatbot .chatbot-inner span { 
+  color: rgb(36, 17, 119); 
+  display: inline-block;
+  text-align: right;
+} 
+#chatbot .chatbot-inner ::-webkit-input-placeholder { 
+  color: #711 
+}
+#chatbot .chatbot-inner #main { 
+  position: fixed;
+  bottom: 0%;
+  right: 0px;
+  width: 250px;
+  border: 0px solid #421;
+  padding: 25px 0px 60px 12px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 0px 38px #e8e8e8;
+  height: 380px;
+  overflow-y: scroll;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+.chatmain{
+  margin-bottom: -390px;
+  /*margin-right: -190px;*/
+}
+button.open-chatbot{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.chatpopup{ 
+  margin-bottom: 80px !important;
+}
+#chatbot .chatbot-inner #main div.chatbox { 
+  margin: 10px; 
+  position: absolute;
+  bottom: 0px;
+  right: 0; 
+}
+#chatbot .chatbot-inner #main div#user, #chatbot .chatbot-inner #main div#bot { 
+  padding: 6px;
+  padding-right: 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 4px 0;
+  display: table;
+  width: 100%;
+}
+#chatbot .chatbot-inner #main div#user{
+ text-align: right;
+}
+#chatbot .chatbot-inner #main div#bot {
+  text-align: left;
+} 
+#chatbot .chatbot-inner #user span#user-response,#chatbot .chatbot-inner #bot span#bot-response  {
+  padding: 8px 14px;
+  border-radius: 10px;
+  display: inline;
+}
+#chatbot .chatbot-inner #user span#user-response {
+  background: antiquewhite;
+  margin-right: 0px;
+} 
+#chatbot .chatbot-inner #bot span#bot-response {
+  background: antiquewhite;
+  display: inline-block;
+  text-align: left;
+
+}
+#chatbot .chatbot-inner #input { 
+  padding: 8px 12px;
+  border: 1px solid #421;
+  width: 100%;
+  max-width: 315px;
+}
+/*CHAT BOT*/
 
 
 

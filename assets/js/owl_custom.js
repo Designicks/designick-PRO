@@ -3,7 +3,7 @@ $(document).ready(function(){
         loop:true,
         margin:20,
         nav:true,
-        center: true,
+        center: false,
         dots: false,
         dotsData:false,
         dotsEach:false,
@@ -12,7 +12,7 @@ $(document).ready(function(){
         fluidSpeed:100,
         slideSpeed: 8000,
         rewind:false,
-        autoplay:true,
+        autoplay:false,
         autoplayTimeout:3000,
         responsive:{
             0:{
@@ -32,9 +32,10 @@ $(document).ready(function(){
 
         $('.solution-carousel').owlCarousel({
         loop:true,
-        margin:20,
+        item:3,
+        margin:12,
         nav:true,
-        center: false,
+        center: true,
         dots: false,
         dotsData:false,
         dotsEach:false,
@@ -47,7 +48,7 @@ $(document).ready(function(){
         touchDarg:true,
         lazyload:true,
         autoplay:true,
-        autoplayTimeout:2000,
+        autoplayTimeout:3000,
         responsive:{
             0:{
                 items:1
