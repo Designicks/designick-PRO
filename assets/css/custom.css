@@ -160,7 +160,7 @@ header .header-inner img{
     color: #fff;
 }
 .intro .intro-inner h3{
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   font-weight: 200;
 }
 .intro .intro-inner span.heading-cover h1{
@@ -168,15 +168,16 @@ header .header-inner img{
   font-weight: 600;
 }
 .intro .intro-inner span.heading-cover p{
+  font-size: 1.1rem;
   font-weight: 300;
   display: block;
-  text-align: right;
-  float: right;
+  /*text-align: right;*/
+  /*float: right;*/
   margin-right: 3rem;
 }
 .intro .intro-inner hr{
   width: 100%;
-  border: 1px dashed #fff;
+  border: 1px dashed #ffffff5e;
 }
 
 .intro .intro-inner h2{
@@ -446,7 +447,8 @@ input:checked + .slider:before {
 
 
 #solution{
-    padding: 4rem 0;
+  padding: 4rem 0;
+  padding-bottom: 0;
 }
 #solution .solution-cover{}
 #solution .solution-cover .solution-inner-left{}
@@ -550,8 +552,56 @@ input:checked + .slider:before {
 /*??CLIENT*/
 
 
-/*CHAT BOT*/
+#portfolio{
+  /*border: 1px solid blue;*/
+  padding: 3rem 0 2rem 0;
+}
+#portfolio .portfolio-cover{
+  /*border: 1px solid red;*/
+}
+#portfolio .portfolio-inner-left {
+  padding: 2rem 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-inner-left span.upper-bar{
+  padding: 5px;
+  height: 8px;
+  width: 50px;
+  border-top: 5px solid #2072fe;
+  display: block;
+  transition: all 0.2s;
+  margin: 0 auto;
+}
+#portfolio .portfolio-inner-right h5{
+  text-align: left;
+  font-size: 18px;
+}
+#portfolio .portfolio-inner-left p{
 
+}
+#portfolio .portfolio-inner-right .portfolio-box{
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 38px #e8e8e8;
+    margin-bottom: 30px;
+}
+#portfolio .portfolio-inner-right .portfolio-box:hover {
+    background: #2072fe;
+    color: #fff;
+    cursor: pointer;
+}
+#portfolio .portfolio-inner-right .portfolio-box img{
+  border-radius: 10px;
+}
+
+
+
+/*CHAT BOT*/
 
 /* ScrollBar Customizations */
 #chat-inner::-webkit-scrollbar {

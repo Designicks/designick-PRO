@@ -1,5 +1,5 @@
 const trigger = [
-  ["hi", "hey", "hello", "good morning", "good afternoon"],
+["hi", "hey", "hello", "good morning", "good afternoon"],
   ["where is nick", "where is developer", "where is designer", "nick", "help","help me","call me","text me","want to hire you","hire","i need a designer","need","we need","need a website","need a application","website","application"],
   ["how are you", "how are u", "how is life", "how are things","hows u","kese ho","how is nick"],
   ["what are you doing", "what is going on", "what is up","whats up","what are u doing","kya kr rhe ho"],
