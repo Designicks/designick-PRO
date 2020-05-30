@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="assets/css/animista.css">
 	<link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
-	<!-- <link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css"> -->
+	<link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css">
 <!-- fontAwesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
@@ -358,10 +358,14 @@
 
 <div id="chatbot">
 	<div class="chatbot-inner">
-		<button class="open-chatbot"><i class="far fa-comment-dots"></i></button>
+		<button class="btn mybutton open-chatbot"><i class="far fa-comment-dots"></i></button>
 		<div id="main" class="chatmain">
-		<button class="close-chatbot" onclick="closeChat()"><i class="far fa-times-circle"></i></button>
-
+			<span class="chat-head"><i class="far fa-hand-peace"></i>
+				 Hey! I'm Online..</span>
+		<button class="btn close-chatbot" onclick="closeChat()"><i class="far fa-times-circle"></i></button>
+		<div id="chat-inner">
+			
+		</div>
 			<div class="chatbox">
 			<input id="input" type="text" placeholder="Lets Talk" autocomplete="off"/>
 			</div>
@@ -386,6 +390,8 @@ $('.theme-changer-popup').toggleClass('setrightpos');
 
 $('.open-chatbot').on('click', function(){
 $('.chatmain').toggleClass('chatpopup');
+$('.open-chatbot').css("display", "none");
+
 });
 
 // function openChat() {
@@ -394,7 +400,13 @@ $('.chatmain').toggleClass('chatpopup');
 
 function closeChat() {
   document.getElementById("main").className += 'chatpopup';
+  $('.open-chatbot').css("display", "block");
 }
+
+// var chatWindow = document.getElementById('main'); 
+// var xH = chatWindow.scrollHeight; 
+// alert(xH);
+// chatWindow.scrollTo(0, xH);
 
 </script>
 
@@ -411,5 +423,6 @@ $('.navigation').removeClass('navbar-scrolled');
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="assets/js/owl_custom.js"></script>
+<script src="assets/js/custom.js"></script>
 </body>
 </html>

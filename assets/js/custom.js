@@ -124,17 +124,21 @@ function compare(triggerArray, replyArray, string) {
 }
 
 function addChat(input, product) {
-  const mainDiv = document.getElementById("main");
+  const mainDiv = document.getElementById("chat-inner");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
-  userDiv.innerHTML = `You: <span id="user-response">${input}</span>`;
+  userDiv.innerHTML = `<i class="fas fa-user-circle"></i> <span id="user-response">${input}</span>`;
   mainDiv.appendChild(userDiv);
 
   let botDiv = document.createElement("div");
   botDiv.id = "bot";
-  botDiv.innerHTML = `Designick: <span id="bot-response">${product}</span>`;
+  botDiv.innerHTML = `<img src="assets/images/favicon.jpg"> <span id="bot-response">${product}</span>`;
   mainDiv.appendChild(botDiv);
   speak(product);
+
+  	var chatWindow = document.getElementById('chat-inner'); 
+	var xH = chatWindow.scrollHeight; 
+	chatWindow.scrollTo(0, xH);
 }
 
 const synth = window.speechSynthesis;
