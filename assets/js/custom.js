@@ -1,7 +1,7 @@
-const trigger = [
+var trigger = [
 ["hi", "hey", "hello", "good morning", "good afternoon"],
   ["where is nick", "where is developer", "where is designer", "nick", "help","help me","call me","text me","want to hire you","hire","i need a designer","need","we need","need a website","need a application","website","application"],
-  ["how are you", "how are u", "how is life", "how are things","hows u","kese ho","how is nick"],
+  ["how are you", "how are u", "how is life", "how are things","hows u","kese ho","how is nick","project"],
   ["what are you doing", "what is going on", "what is up","whats up","what are u doing","kya kr rhe ho"],
   ["how old are you","what is your age"],
   ["who are you", "are you human", "are you bot", "are you human or bot","who are u"],
@@ -27,7 +27,7 @@ const trigger = [
   ["oh","ohh","accha","acha","yup"]
 ];
 
-const reply = [
+var reply = [
   ["Hello!", "Hi!", "Hey!", "Hi there!"],
   ["Hey there, Nick is available all time at 8839690523 / nickunj.gurjar@gmail.com"],
   [
@@ -61,7 +61,7 @@ const reply = [
   ["Yes!","yeah","yups"]
 ];
 
-const alternative = [
+var alternative = [
   "hello",
   "Go on...",
   "Bro...",
@@ -69,7 +69,7 @@ const alternative = [
   "I'm listening..."
 ];
 
-const coronavirus = ["Please stay home"];
+var coronavirus = ["Please stay home"];
 
 document.addEventListener("DOMContentLoaded", () => {
 	const inputField = document.getElementById("input")
@@ -142,8 +142,8 @@ function addChat(input, product) {
 	chatWindow.scrollTo(0, xH);
 }
 
-const synth = window.speechSynthesis;
-let voices = synth.getVoices();
+var synth = window.speechSynthesis;
+var voices = synth.getVoices();
 
 function speak(string) {
   let u = new SpeechSynthesisUtterance(string);
@@ -153,5 +153,4 @@ function speak(string) {
   u.rate = 1;
   u.pitch = 1; //0-2 interval
   synth.speak(u);
-
 }

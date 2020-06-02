@@ -95,7 +95,7 @@ header .header-inner img{
 .my-navbar {
   padding: 0;
   margin-right: 0px;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 .my-navbar ul{
   padding: 0;
@@ -104,7 +104,7 @@ header .header-inner img{
   padding: 10px;
   display: inline-block;
   font-family: poppins;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   margin-right: 20px;
   color: #2c3c50;
@@ -583,6 +583,7 @@ input:checked + .slider:before {
 /*portfolio NEW*/
 section#NEWPORTFOLIO {
   padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 #port-mobile-tab{
   /*border: 1px solid #ddd;*/
@@ -749,7 +750,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 }
 .port-web-owl .owl-stage-outer
 {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 #port-mobile-owl-ios .port-mobile-owl .port-mobile-item .port-content img{
   border-radius: 0px;
@@ -861,6 +862,75 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
     padding: 1rem 0;
 }
 
+/*PORTFOLIO ENDS*/
+
+/*REVIEWS Starts*/
+#REVIEWS{
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  /*border: 1px solid #ddd;*/
+}
+#REVIEWS .review-header{
+  padding-top: 0rem; 
+  padding-bottom: 2rem;
+}
+#REVIEWS .review-header .upper-bar{
+  padding: 5px;
+  height: 8px;
+  width: 50px;
+  border-top: 5px solid #a734fd;
+  display: block;
+  transition: all 0.2s;
+  margin: 0 auto;
+}
+#REVIEWS .review-cover .row > div{
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+  padding: 0 1rem;
+}
+#REVIEWS .review-cover .review-box {
+  border-radius: 12px;
+  /*height: 315px;*/
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  box-shadow: 0 7px 24px 0 rgba(0,0,0,.06);
+}
+#REVIEWS .review-cover .review-box .review-inner {
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 20px; 
+  border-bottom: 1px solid #ddd;
+}
+#REVIEWS .review-cover .review-box p.tweet i{
+  font-size: 28px;
+  margin-right: 8px;
+  color: #a734fd; 
+}
+#REVIEWS .review-cover .review-box img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 40px;
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+}
+#REVIEWS .review-cover .review-box span{
+  display: block;
+  margin-left: 20px;
+  font-weight: 600;
+}
+#REVIEWS .review-cover .review-box span:last-child{
+  font-size: 14px;
+  width: 225px;
+  font-weight: lighter;
+}
+#REVIEWS .review-cover .review-box p{
+  padding: 14px 0; 
+  font-size: 14px;
+
+}
+/*REVIEWS Ends*/
+
 
 
 /*CHAT BOT*/
@@ -904,6 +974,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   padding: 27px 0px 70px 0px;
   border-radius: 10px;
   background: #a734fda6;
+  background: #2048b4;
   color: #fff;
   box-shadow: 0px 0px 16px #e8e8e8;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
@@ -1012,7 +1083,8 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   transition: all 0.2s ease-in-out;
 }
 #chatbot button.open-chatbot:hover {
-
+  background: #2048b4;
+  box-shadow: #0000004a 0px 5px 40px;
 }
 #chatbot button.close-chatbot {
     padding: 5px 12px;
