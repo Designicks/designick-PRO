@@ -232,7 +232,7 @@ header .header-inner img{
 }
 .theme-changer-popup .inner-popup .inner-nody.menu_div {
     overflow-y: scroll;
-    height:calc(100vh - 235px);
+    height: calc(95vh - 230px);
 }
 .theme-changer-popup .inner-popup .inner-nody.menu_div::-webkit-scrollbar {
   width: 10px;
@@ -251,7 +251,7 @@ header .header-inner img{
     display: none;
     left: -65px;
     border-radius: 50% 0 0 50%;
-    top: 22px;
+    top: 20px;
     padding: 12px 13px 12px 12px;
     z-index: 1;
     position: absolute;
