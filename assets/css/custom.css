@@ -611,9 +611,9 @@ section#NEWPORTFOLIO .portfolio-header h2{
   color: #2c3c50;
 }
 #port-mobile-tab .nav-tabs .nav-item,
-#port-web-tab .nav-tabs .nav-item
-{
+#port-web-tab .nav-tabs .nav-item{
   text-align: center;
+  padding: 1rem 1rem 0 1rem;
 }
 #port-mobile-tab .nav-tabs .nav-item p, #port-mobile-tab .nav-tabs .nav-item i,
 #port-web-tab .nav-tabs .nav-item p, #port-web-tab .nav-tabs .nav-item i
@@ -641,7 +641,7 @@ section#NEWPORTFOLIO .portfolio-header h2{
 #port-mobile-tab .portfolio div h1.port-title,
 #port-web-tab .portfolio div h1.port-title
 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: #2c3c50;
     margin: 0 auto;
@@ -691,8 +691,7 @@ section#NEWPORTFOLIO .portfolio-header h2{
   visibility: hidden;
 }
 .port-mobile-owl .owl-nav button.owl-next,
-.port-mobile-owl .owl-nav button.owl-prev
- {
+.port-mobile-owl .owl-nav button.owl-prev{
   position: relative;
   bottom: 60px;
   background-image: url(../icons/right.png)!important;
@@ -700,17 +699,19 @@ section#NEWPORTFOLIO .portfolio-header h2{
   background-repeat: no-repeat!important;
   padding: 10px 25px !important;
   transition: all 0.3s ease-in-out;
+  right: 0;
+  left: 0;
 }
 .port-mobile-owl .owl-nav button.owl-prev{
   transform: rotateY(180deg);
 }
 .port-mobile-owl .owl-nav button.owl-next:hover{
   filter: saturate(0.2);
-  right: -150px;
+  left: 5px !important;
  }
 .port-mobile-owl .owl-nav button.owl-prev:hover{
   filter: saturate(0.2);
-  left: -150px;
+  left: -5px;
 }
 
 .port-mobile-owl .owl-next,.port-mobile-owl .owl-prev,
