@@ -585,6 +585,18 @@ section#NEWPORTFOLIO {
   padding-top: 6rem;
   padding-bottom: 3rem;
 }
+section#NEWPORTFOLIO .portfolio-header span.upper-bar{
+  padding: 5px;
+  height: 8px;
+  width: 50px;
+  border-top: 5px solid #a734fd;
+  display: block;
+  margin: 0 auto;  
+}
+section#NEWPORTFOLIO .portfolio-header h2{
+  font-size: 2.2rem;
+  font-weight: 600;
+}
 #port-mobile-tab{
   /*border: 1px solid #ddd;*/
   position: relative;
@@ -868,19 +880,22 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 #REVIEWS{
   padding-top: 5rem;
   padding-bottom: 4rem;
-  /*border: 1px solid #ddd;*/
+  color: #2c3c50;
 }
 #REVIEWS .review-header{
   padding-top: 0rem; 
   padding-bottom: 2rem;
 }
-#REVIEWS .review-header .upper-bar{
+#REVIEWS .review-header h2{
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+#REVIEWS .review-header span.upper-bar{
   padding: 5px;
   height: 8px;
   width: 50px;
   border-top: 5px solid #a734fd;
   display: block;
-  transition: all 0.2s;
   margin: 0 auto;
 }
 #REVIEWS .review-cover .row > div{
@@ -894,6 +909,14 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   border: 1px solid #ddd;
   padding: 1.5rem;
   box-shadow: 0 7px 24px 0 rgba(0,0,0,.06);
+  transition: all 0.2s ease-in-out;
+}
+#REVIEWS .review-cover .review-box:hover {
+  cursor: pointer;
+  border: 1px solid #2c3c50;
+}
+#REVIEWS .review-cover .review-box:hover p.tweet i{
+  color: #2c3c50;
 }
 #REVIEWS .review-cover .review-box .review-inner {
   width: 100%;
@@ -904,7 +927,8 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 #REVIEWS .review-cover .review-box p.tweet i{
   font-size: 28px;
   margin-right: 8px;
-  color: #a734fd; 
+  color: #a734fd;
+  transition: all 0.2s ease-in-out;
 }
 #REVIEWS .review-cover .review-box img{
   max-width: 100%;
@@ -923,10 +947,12 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   font-size: 14px;
   width: 225px;
   font-weight: lighter;
+  color: #aaa;
 }
 #REVIEWS .review-cover .review-box p{
   padding: 14px 0; 
   font-size: 14px;
+  color: #2c3c50;
 
 }
 /*REVIEWS Ends*/
