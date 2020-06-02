@@ -1062,6 +1062,10 @@ button.close-chatbot.focus,button.close-chatbot:focus {
 .intro {
     padding: 8rem 0 0 0.8rem;
   }
+  header{
+    background-position: top;
+    background-size: 182%;
+  }
   #yourneed {
     padding-bottom: 0;
   }
