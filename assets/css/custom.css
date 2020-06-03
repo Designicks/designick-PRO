@@ -438,7 +438,7 @@ input:checked + .slider:before {
 }
 .need-box img{
   width: 100%;
-  max-width: 120px;
+  max-width: 95px;
   /* margin: 0 auto; */
   display: block;
   }
@@ -447,21 +447,14 @@ input:checked + .slider:before {
   margin-top: 30px;
 }
 .need-box:hover{
-    //background: #a734fd;
-    //color: #fff;
     cursor: pointer;
     border: 1px solid #2c3c50;
 }
 .need-box i {
-    //color: #a734fd;
     font-size: 2rem;
     display: block;
     margin-bottom: 1rem;
     transition: all 0.2s ease-in-out;
-}
-.need-box:hover i,.need-box:hover .upper-bar{
-   //color: #fff; 
-   //border-color: #fff;
 }
 .need-box h3 {
     font-size: 1.3rem;
