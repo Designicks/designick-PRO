@@ -1,4 +1,4 @@
-var trigger = [
+const trigger = [
 ["hi", "hey", "hello", "good morning", "good afternoon"],
   ["where is nick", "where is developer", "where is designer", "nick", "help","help me","call me","text me","want to hire you","hire","i need a designer","need","we need","need a website","need a application","website","application"],
   ["how are you", "how are u", "how is life", "how are things","hows u","kese ho","how is nick","project"],
@@ -27,7 +27,7 @@ var trigger = [
   ["oh","ohh","accha","acha","yup"]
 ];
 
-var reply = [
+const reply = [
   ["Hello!", "Hi!", "Hey!", "Hi there!"],
   ["Hey there, Nick is available all time at 8839690523 / nickunj.gurjar@gmail.com"],
   [
@@ -61,7 +61,7 @@ var reply = [
   ["Yes!","yeah","yups"]
 ];
 
-var alternative = [
+const alternative = [
   "hello",
   "Go on...",
   "Bro...",
@@ -142,8 +142,8 @@ function addChat(input, product) {
 	chatWindow.scrollTo(0, xH);
 }
 
-var synth = window.speechSynthesis;
-var voices = synth.getVoices();
+const synth = window.speechSynthesis;
+const voices = synth.getVoices();
 
 function speak(string) {
   let u = new SpeechSynthesisUtterance(string);

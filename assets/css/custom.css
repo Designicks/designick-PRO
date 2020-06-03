@@ -398,7 +398,7 @@ input:checked + .slider:before {
 .yourneed-inner-left {
     padding: 2rem 2rem;
 }
-.yourneed-inner-left .upper-bar,.yourneed-inner-right .need-box .upper-bar{
+.yourneed-inner-left .upper-bar{
     padding: 5px;
     height: 8px;
     width: 50px;
@@ -418,34 +418,50 @@ input:checked + .slider:before {
 .yourneed-inner-right{
   padding: 0rem 0;
 }
+.yourneed-inner-right .need-box .upper-bar{
+  padding: 2px;
+  height: 10px;
+  width: 30%;
+  border-top: 5px solid #a734fd;
+  display: inline-block;
+  transition: all 0.2s;
+  margin-top: 10px;
+}
 .need-box {
     border-radius: 10px;
     padding: 1rem 2rem;
-    /*margin-bottom: 30px;*/
-    min-height: 205px;
+    min-height: 260px;
     text-align: left;
     transition: all 0.2s ease-in-out;
     box-shadow: 0px 0px 38px #e8e8e8;
+    border: 1px solid #e8e8e8;
 }
+.need-box img{
+  width: 100%;
+  max-width: 120px;
+  /* margin: 0 auto; */
+  display: block;
+  }
 .yourneed-inner-right .row div:nth-child(2) .need-box,
 .yourneed-inner-right .row div:nth-child(4) .need-box{
   margin-top: 30px;
 }
 .need-box:hover{
-    background: #a734fd;
-    color: #fff;
+    //background: #a734fd;
+    //color: #fff;
     cursor: pointer;
+    border: 1px solid #2c3c50;
 }
 .need-box i {
-    color: #a734fd;
+    //color: #a734fd;
     font-size: 2rem;
     display: block;
     margin-bottom: 1rem;
     transition: all 0.2s ease-in-out;
 }
 .need-box:hover i,.need-box:hover .upper-bar{
-   color: #fff; 
-   border-color: #fff;
+   //color: #fff; 
+   //border-color: #fff;
 }
 .need-box h3 {
     font-size: 1.3rem;
@@ -501,7 +517,7 @@ input:checked + .slider:before {
   height: 240px;
   border-radius: 10px;
   padding: 1rem;
-  border: 2px solid rgba(1, 1, 1, 0);
+  border: 1px solid rgba(1, 1, 1, 0);
   transition: all 0.3s;
 }
 /*#solution .owl-carousel .owl-item.active:nth-child(2)  .solution-item{*/
@@ -511,7 +527,7 @@ input:checked + .slider:before {
 }
 #solution .solution-carousel .owl-item .solution-item:hover{
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-  border: 2px solid #a734fd;
+  border: 1px solid #2c3c50;
 }
 #solution .solution-carousel .owl-item .solution-item h6{
   text-align: center; 
@@ -1099,10 +1115,10 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   text-align: left;
 }
 #chatbot button.open-chatbot {
-  width: 60px;
+  width: 68px;
   border-radius: 40px;
-  padding: 8px 12px;
-  font-size: 30px;
+  padding: 8px 0px;
+  font-size: 35px;
   font-weight: 100;
   color: #fff;
   background: #a734fd;
@@ -1156,8 +1172,8 @@ button.close-chatbot.focus,button.close-chatbot:focus {
   {
    position: unset;
   }
-}          
-@media only screen and (max-width: 567px){          
+}
+@media only screen and (max-width: 567px){      
 .intro {
     padding: 8rem 0 0 0.8rem;
   }
