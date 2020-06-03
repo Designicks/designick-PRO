@@ -1158,9 +1158,14 @@ button.close-chatbot.focus,button.close-chatbot:focus {
 
 
 
+@media only screen and (max-width: 1340px){
+  #myVideo {
+    max-width: 168% !important;
+  }     
+}
 
 
-@media only screen and (max-width: 1040px){         
+@media only screen and (max-width: 1040px){   
  .my-navbar{
     display: none;
   }
@@ -1170,6 +1175,14 @@ button.close-chatbot.focus,button.close-chatbot:focus {
 }
 
 @media only screen and (max-width: 768px){
+  #myVideo{
+    top: 0 !important;
+    max-width: 320% !important;
+    z-index: -100 !important;
+    min-height: 100% !important;
+    left: auto !important;
+    right: auto !important;
+  }
   .need-box {
     margin-bottom: 30px;
   }
