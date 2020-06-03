@@ -1,8 +1,11 @@
 /* GLobal */
+html {
+  scroll-behavior: smooth;
+  }
 body{
   margin:0;
   padding: 0;
-/*  background: #e9ecef;*/
+  background: #fff !important;
   font-family: poppins;
 }
 * ul li, a{
@@ -30,7 +33,7 @@ body::-webkit-scrollbar-track {
   background: #ddd;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #a734fd;
+  background-color: #a734fd !important;
   border-radius: 20px;
   border: 3px solid #ddd;
 }
@@ -57,24 +60,26 @@ button:focus {
 
 /*header*/
 header{
-  min-height: 700px;
+  min-height: 760px;
   height: 100%;
-  background-image: url(../images/components/component_cutting07.png);
+/*  background-image: url(../images/components/blob.svg);
   background-position: left;
   background-size:auto 100%;
   background-position-x: -2px;
-  background-repeat: no-repeat;
+  background-position-x: -165px;
+  background-repeat: no-repeat;*/
+  background: #00000082;
+  background: #2c3c5099;
 }
 header .header-img{
   position: absolute;
   left:-2px;
 }
 header .header-img-right1{
-    width: 100%;
-    max-width: 580px;
-    margin-top: 75px;
-    float: right;
-
+  width: 100%;
+  max-width: 480px;
+  margin-top: 120px;
+  float: right;
 }
 header .header-inner.navigation{
   width: 100%;
@@ -82,6 +87,7 @@ header .header-inner.navigation{
   z-index: 999;
   padding: 6px 12px;
   transition: all 0.3s ease-in-out;
+  background: #fff;
 }
 .navbar-scrolled{
   background: #ffffffb8;
@@ -391,6 +397,7 @@ input:checked + .slider:before {
 #yourneed{
   /*border: 1px solid blue;*/
   padding: 6rem 0 2rem 0;
+  background: #fff !important;
 }
 #yourneed .yourneed-cover{
   /*border: 1px solid red;*/
@@ -463,8 +470,9 @@ input:checked + .slider:before {
 
 
 #solution{
-  padding-top: 6rem;
+  padding-top: 4.3rem;
   padding-bottom: 0;
+  background: #fff !important;
 }
 #solution .solution-cover{}
 #solution .solution-cover .solution-inner-left{}
@@ -591,8 +599,9 @@ input:checked + .slider:before {
 
 /*portfolio NEW*/
 section#NEWPORTFOLIO {
-  padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-top: 6.3rem;
+  /*padding-bottom: 2rem;*/
+  background: #fff !important;
 }
 section#NEWPORTFOLIO .portfolio-header span.upper-bar{
   padding: 5px;
@@ -658,6 +667,9 @@ section#NEWPORTFOLIO .portfolio-header h2{
     padding-bottom: 10px;
     z-index: 99;
 }
+.port-web-owl .owl-nav{
+  display: none;
+}
 .port-mobile-owl,.port-web-owl{
     //height: 200px;
     position: relative!important;
@@ -685,7 +697,8 @@ section#NEWPORTFOLIO .portfolio-header h2{
     font-weight: 600;
     font-size: 30px;
 }
-.port-mobile-owl button.owl-prev{
+.port-mobile-owl button.owl-prev
+{
   left: -140px;
   float: left;
 }
@@ -772,7 +785,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 }
 .port-web-owl .owl-stage-outer
 {
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 #port-mobile-owl-ios .port-mobile-owl .port-mobile-item .port-content img{
   border-radius: 0px;
@@ -808,7 +821,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 }
 
 .my-column img {
-  margin: 0 20px;
+  /*margin: 0 20px;*/
   margin-top: 30px;
   padding: 0 30px;
   vertical-align: middle;
@@ -855,6 +868,9 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   transition: all 0.2s;
   margin: 0 auto;
 }
+#portfolio .portfolio-inner-right .row > div {
+  padding: 16px;
+}
 #portfolio .portfolio-inner-right h5{
   text-align: left;
   font-size: 16px;
@@ -864,13 +880,13 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 }
 #portfolio .portfolio-inner-right .portfolio-box{
   border-radius: 10px;
-  padding: 1.5rem 1.2rem;
+  padding: 1.5rem 0.7rem;
   padding-bottom: 0.5rem;
   text-align: left;
   transition: all 0.2s ease-in-out;
   /*box-shadow: 0px 0px 38px #e8e8e8;*/
   box-shadow: 1px 2px 15px 2px rgba(0, 0, 0, 0.25);
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 #portfolio .portfolio-inner-right .portfolio-box:hover {
   background: #a734fd;
@@ -888,9 +904,10 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 
 /*REVIEWS Starts*/
 #REVIEWS{
-  padding-top: 5rem;
+  padding-top: 6.2rem;
   padding-bottom: 4rem;
   color: #2c3c50;
+  background: #fff !important;
 }
 #REVIEWS .review-header{
   padding-top: 0rem; 
@@ -1165,6 +1182,12 @@ button.close-chatbot.focus,button.close-chatbot:focus {
   {
    position: unset;
   }
+
+  .my-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 @media only screen and (max-width: 567px){      
 .intro {
@@ -1206,6 +1229,36 @@ button.close-chatbot.focus,button.close-chatbot:focus {
   #port-mobile-tab .nav-link >p {
     font-size: 14px; 
   }
+
+  /*//portfolio page*/
+  .my-column img {
+    margin-top: 22px;
+    padding: 0 10px;
+  }
+   .my-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  #port-mobile-tab .nav-tabs .nav-item, #port-web-tab .nav-tabs .nav-item {
+    text-align: center;
+    padding: 0.5rem 0.5rem 0 1rem;
+  }
+  .port-content-full.container-fluid #port-mobile-owl-ios .row {
+    padding: 0;
+  }
+  .port-content-full.container-fluid #port-mobile-owl-ios .row > div,
+  .port-content-full.container-fluid #port-mobile-owl-ios .row > div > div{
+    padding: 0;
+  }
+  .port-web-owl .owl-stage-outer {
+    padding: 5rem 0;
+  }
+  #portfolio {
+    padding: 0rem 0 2rem 0;
+  }
+  /*//portfolio page*/
 }
 
 @media only screen and (max-width: 360px){
