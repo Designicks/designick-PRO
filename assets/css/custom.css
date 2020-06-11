@@ -45,7 +45,7 @@ button:focus {
 }
 .mybutton{
     display: inline-block;
-    padding: 1rem 5rem;
+    padding: 1rem 4.5rem;
     color: #fff;
     border: none;
     background: linear-gradient(to right, rgba(79,26,126,1) 0%, rgba(238,45,158,1) 100%);
@@ -60,7 +60,7 @@ button:focus {
 
 /*header*/
 header{
-  min-height: 760px;
+  min-height: 700px;
   height: 100%;
 /*  background-image: url(../images/components/blob.svg);
   background-position: left;
@@ -70,7 +70,7 @@ header{
   background-repeat: no-repeat;*/
   background: #00000082;
   background: #2c3c5099;
-  background: #fff;
+  background: #2c3c50;
 
 
 }
@@ -172,7 +172,7 @@ header .header-inner img{
     text-align: left;
     padding: 0rem 3rem;
     margin-top: 7rem;
-    color: #a734fd;
+    color: #ffffff;
 }
 .intro .intro-inner h3{
   font-size: 1.1rem;
@@ -602,7 +602,7 @@ input:checked + .slider:before {
 
 /*portfolio NEW*/
 section#NEWPORTFOLIO {
-  padding-top: 6.3rem;
+  padding-top: 7rem;
   /*padding-bottom: 2rem;*/
   background: #fff !important;
 }
@@ -617,6 +617,8 @@ section#NEWPORTFOLIO .portfolio-header span.upper-bar{
 section#NEWPORTFOLIO .portfolio-header h2{
   font-size: 2.2rem;
   font-weight: 600;
+  position: relative;
+  z-index: 99;
 }
 #port-mobile-tab{
   /*border: 1px solid #ddd;*/
@@ -975,7 +977,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 }
 #REVIEWS .review-cover .review-box span:last-child{
   font-size: 14px;
-  width: 225px;
+  width: 260px;
   font-weight: lighter;
   color: #aaa;
 }
@@ -1186,6 +1188,15 @@ button.close-chatbot.focus,button.close-chatbot:focus {
     left: auto !important;
     right: auto !important;
   }
+  header .header-img-right1 {
+    margin-top: 10px;
+  }
+  #yourneed {
+    padding-top: 2rem;   
+  }
+  #solution {
+    padding-top: 2.3rem;
+  }
   .need-box {
     margin-bottom: 30px;
   }
@@ -1197,6 +1208,9 @@ button.close-chatbot.focus,button.close-chatbot:focus {
   .port-mobile-owl .owl-nav button.owl-prev
   {
    position: unset;
+  }
+  .owl-carousel .owl-item img {
+    width: 90%;
   }
 
   .my-column {
@@ -1233,9 +1247,9 @@ button.close-chatbot.focus,button.close-chatbot:focus {
     margin-left: -1px;
   }
   #port-mobile-tab img.comp-img-dev {
-    width: 160px;
+    width: 150px;
     right: 0px;
-    top: -30px;
+    top: 20px;
   }
   #port-mobile-tab .nav-link {
     padding: 4px 0px;
