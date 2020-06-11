@@ -50,7 +50,7 @@ button:focus {
     border: none;
     background: linear-gradient(to right, rgba(79,26,126,1) 0%, rgba(238,45,158,1) 100%);
     background: -webkit-linear-gradient(left, rgb(38, 53, 70) 0%, rgb(27, 84, 250) 100%);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out !important;
   }
   .mybutton:hover{
     color: #e7e7e7;
@@ -70,6 +70,9 @@ header{
   background-repeat: no-repeat;*/
   background: #00000082;
   background: #2c3c5099;
+  background: #fff;
+
+
 }
 header .header-img{
   position: absolute;
@@ -169,7 +172,7 @@ header .header-inner img{
     text-align: left;
     padding: 0rem 3rem;
     margin-top: 7rem;
-    color: #fff;
+    color: #a734fd;
 }
 .intro .intro-inner h3{
   font-size: 1.1rem;
@@ -544,7 +547,7 @@ input:checked + .slider:before {
   background-size: 50px !important;
   background-repeat: no-repeat!important;
   right: 10px;
-  bottom: -50px;
+  bottom: -80px;
   position: absolute;
   transition: all 0.3s ease-in-out;
 }
