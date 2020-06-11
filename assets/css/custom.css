@@ -6,6 +6,7 @@ body{
   margin:0;
   padding: 0;
   background: #fff !important;
+  background: #f6f9fc !important;
   font-family: poppins;
 }
 * ul li, a{
@@ -204,16 +205,13 @@ header .header-inner img{
 
 }
 .intro-button-cover button.btn-getstarted{
-    /*padding: 1rem 5rem;
-    color: #fff;
-    border: none;
-    background: linear-gradient(to right, rgba(79,26,126,1) 0%, rgba(238,45,158,1) 100%);
-    background: -webkit-linear-gradient(left, rgb(38, 53, 70) 0%, rgb(27, 84, 250) 100%);
-    transition: all 0.3s ease-in-out;*/
+    border: 1px solid #ffffff;
+    background: none;
+    transition: all 0.2s ease-in-out;
 }
 .intro-button-cover button.btn.btn-getstarted:hover {
-    /*color: #e7e7e7;
-    background: -webkit-linear-gradient(right, rgb(38, 53, 70) 0%, rgb(27, 84, 250) 100%);*/
+    color: #2c3c50;
+    background: #fff;
 }
 /*header*/
 
@@ -444,7 +442,7 @@ input:checked + .slider:before {
     text-align: left;
     transition: all 0.2s ease-in-out;
     box-shadow: 0px 0px 38px #e8e8e8;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #fff;
 }
 .need-box img{
   width: 100%;
@@ -619,6 +617,7 @@ section#NEWPORTFOLIO .portfolio-header h2{
   font-weight: 600;
   position: relative;
   z-index: 99;
+  color:#2c3c50;
 }
 #port-mobile-tab{
   /*border: 1px solid #ddd;*/
@@ -1204,15 +1203,24 @@ button.close-chatbot.focus,button.close-chatbot:focus {
   .yourneed-inner-right .row div:nth-child(4) .need-box{
     margin-top: 0px;
   }
-  .port-mobile-owl .owl-nav button.owl-next,
-  .port-mobile-owl .owl-nav button.owl-prev
-  {
-   position: unset;
-  }
   .owl-carousel .owl-item img {
     width: 90%;
   }
+  #port-mobile-tab .portfolio div h1.port-title, #port-web-tab .portfolio div h1.port-title {
+    font-size: 1.2rem;
+    padding: 30px 2px 0px 2px;
+  }
+  #NEWPORTFOLIO .owl-carousel .owl-nav button.owl-next,
+  #NEWPORTFOLIO  .owl-carousel .owl-nav button.owl-prev{
+    position: unset;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
 
+
+  #portfolio .portfolio-inner-right .row > div {
+    padding: 16px 0;
+  }
   .my-column {
     -ms-flex: 50%;
     flex: 50%;
@@ -1261,6 +1269,9 @@ button.close-chatbot.focus,button.close-chatbot:focus {
   }
 
   /*//portfolio page*/
+  #portfolio .portfolio-cover > .row >div {
+    padding: 0;
+  }
   .my-column img {
     margin-top: 22px;
     padding: 0 10px;
