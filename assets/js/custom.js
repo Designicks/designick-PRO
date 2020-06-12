@@ -1,4 +1,4 @@
-const trigger = [
+var trigger = [
 ["hi", "hey", "hello", "good morning", "good afternoon"],
   ["where is nick", "where is developer", "where is designer", "nick", "help","help me","call me","text me","want to hire you","hire","i need a designer","need","we need","need a website","need a application","website","application"],
   ["how are you", "how are u", "how is life", "how are things","hows u","kese ho","how is nick","project"],
@@ -27,7 +27,7 @@ const trigger = [
   ["oh","ohh","accha","acha","yup"]
 ];
 
-const reply = [
+var reply = [
   ["Hello!", "Hi!", "Hey!", "Hi there!"],
   ["Hey there, Nick is available all time at 8839690523 / nickunj.gurjar@gmail.com"],
   [
@@ -135,22 +135,22 @@ function addChat(input, product) {
   botDiv.id = "bot";
   botDiv.innerHTML = `<img src="assets/images/favicon.jpg"> <span id="bot-response">${product}</span>`;
   mainDiv.appendChild(botDiv);
-  speak(product);
+  // speak(product);
 
   	var chatWindow = document.getElementById('chat-inner'); 
 	var xH = chatWindow.scrollHeight; 
 	chatWindow.scrollTo(0, xH);
 }
 
-const synth = window.speechSynthesis;
-const voices = synth.getVoices();
+// const synth = window.speechSynthesis;
+// const voices = synth.getVoices();
 
-function speak(string) {
-  let u = new SpeechSynthesisUtterance(string);
-  u.text = string;
-  u.lang = "en-US";
-  u.volume = 1; //0-1 interval
-  u.rate = 1;
-  u.pitch = 1; //0-2 interval
-  synth.speak(u);
-}
+// function speak(string) {
+//   let u = new SpeechSynthesisUtterance(string);
+//   u.text = string;
+//   u.lang = "en-US";
+//   u.volume = 1; //0-1 interval
+//   u.rate = 1;
+//   u.pitch = 1; //0-2 interval
+//   synth.speak(u);
+// }

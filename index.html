@@ -42,7 +42,7 @@
 	</style>
 </head>
 <body>
-<header>
+<header id="HEADER">
 	<div class="container-fluid pr-0 pl-0">
 		<!-- <video autoplay muted loop id="myVideo">
   		<source src="assets/images/clip/typing.mp4" type="video/mp4">
@@ -55,14 +55,14 @@
 			  	<div class="col-lg-10 col-md-10 col-sm-12">
 				  <div class="my-navbar">
 				  	<ul>
-				  		<a href=""><li><i class="fas fa-home"></i>Home</li></a>
+				  		<a href="#HEADER"><li><i class="fas fa-home"></i>Home</li></a>
 						<a href="#yourneed"><li><i class="far fa-address-card"></i>About</li></a>
 						<a href="#solution"><li><i class="fas fa-store"></i>Services</li></a>
 						<a href="#NEWPORTFOLIO"><li><i class="fab fa-dashcube"></i>Portfolio</li></a>
 						<a href="#REVIEWS"><li><i class="fas fa-feather-alt"></i>Reviews</li></a>
-						<a href=""><li><i class="fas fa-industry"></i>Industries</li></a>
+						<a href="#INDUSTRIES"><li><i class="fas fa-industry"></i>Industries</li></a>
 						<!-- <a href=""><li><i class="fas fa-layer-group"></i>Plans</li></a> -->
-						<a href=""><li><i class="far fa-user"></i>Contact</li></a>
+						<a href="#CONTACT"><li><i class="far fa-user"></i>Contact</li></a>
 						
 						<a href="https://designicks.github.io/designickpro"><button class="btn mybutton goto-mobile-version"><i class="far fa-hand-point-right"></i> &nbsp; &nbsp;<i class="fas fa-mobile-alt"></i></button></a>
 				  	</ul>
@@ -75,13 +75,13 @@
 			<div class="col-lg-6 col-md-6 col-sm-12">
 		  		<div class="intro">
 		  			<div class="intro-inner">
-						<h3>Welcome to </h3>
+						<!-- <h3></h3> -->
 						<span class="heading-cover">
 							<h1 class="">DESIGNICK PRO</h1>
 							<p>A Lead towards Technology</p>
 						</span>
 						<hr>
-						<h2 class="text-shadow-drop-bottom">Get Ready for Rich Digital Experience</h2>
+						<h2 class="text-shadow-drop-bottom">We Develop Creative Products & Digital Solutions!</h2>
 						<div class="intro-button-cover">
 							<a href="#yourneed"><button class="btn btn-getstarted mybutton">Get Started</button></a>
 						</div>
@@ -114,14 +114,14 @@
 					<div class="p-body">
 						<div class="inner-nody menu_div">
 							<ul>
-								<a href=""><li><i class="fas fa-home"></i>Home</li></a>
-								<a href=""><li><i class="far fa-address-card"></i>About</li></a>
-								<a href=""><li><i class="fas fa-store"></i>Services</li></a>
-								<a href=""><li><i class="fab fa-dashcube"></i>Portfolio</li></a>
-								<a href=""><li><i class="fas fa-feather-alt"></i>Reviews</li></a>
-								<a href=""><li><i class="fas fa-industry"></i>Industries</li></a>
+								<a href="#HEADER"><li><i class="fas fa-home"></i>Home</li></a>
+								<a href="#yourneed"><li><i class="far fa-address-card"></i>About</li></a>
+								<a href="#solution"><li><i class="fas fa-store"></i>Services</li></a>
+								<a href="#PORTFOLIO"><li><i class="fab fa-dashcube"></i>Portfolio</li></a>
+								<a href="#REVIEWS"><li><i class="fas fa-feather-alt"></i>Reviews</li></a>
+								<a href="#INDUSTRIES"><li><i class="fas fa-industry"></i>Industries</li></a>
 								<!-- <a href=""><li><i class="fas fa-layer-group"></i>Plans</li></a> -->
-								<a href=""><li><i class="far fa-user"></i>Contact</li></a>
+								<a href="#CONTACT"><li><i class="far fa-user"></i>Contact</li></a>
 							</ul>
 						</div>
 					</div>
@@ -153,7 +153,8 @@
 					<div class="yourneed-inner-left">
 						<span class="upper-bar"></span>
 						<h2>Why does your Business Need Designick</h2>
-						<p>The reasons your should think about inorder to boost your Business. Providing IT Solutions for the Startups, Agencies And Enterprice. Converting your business from Offline to Online World.</p>
+						<p>The reasons your should think about inorder to boost your Business.
+						<br /> Providing IT Solutions for the Startups, Agencies And Enterprice. Converting your business from Offline to Online World.</p>
 						<a href="#"><button class="btn btn-exploremore mybutton">Explore More</button></a>
 						
 					</div>
@@ -666,143 +667,150 @@
 <!----------------------
 	Industry We Serve Starts
 ----------------------->
-<section id="REVIEWS">
-	<div class="container-fluid">
-		<div class="review-cover">
+<section id="INDUSTRIES">
+	<div class="container">
+		<div class="industry-cover">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="review-header">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="industry-header">
 						<span class="upper-bar"></span>
-						<h2 class="text-center">Industries We Serve </h2>						
+						<h2 class="text-center">Industries We Serve </h2>
+						<p class="text-center">Innovate your Business with us. Business isn't size fit for all. Every industry requires a custom solution.</p>				
 					</div>
-				</div>
-
-				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div class="review-box">
-						<div class="review-inner clearfix">
-						<img class="lozad img-fluid" data-src="assets/images/industries/elearning.png">
-							<div class="review-title">
-								<span>E-Learning & Education</span>
-
+					<div class="row">
+						
+						<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+							<div class="industry-box">
+								<div class="industry-inner clearfix">
+									<img class="lozad img-fluid" data-src="assets/images/industries/ecommerce.svg">
+									<div class="industry-title">
+										<span>E-Commerce</span>
+									</div>
+								</div>
 							</div>
 						</div>
-						<p class="tweet">
-							I needed a logo for my sales and manufacturing business to make it a brand. I hired Designick for this, and they really did a great job,  
-						</p>
-					</div>
-				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div class="review-box">
-						<div class="review-inner clearfix">
-						<img class="lozad img-fluid" data-src="assets/images/industries/elearning.png">
-							<div class="review-title">
-								<span>Health & Fitness</span>
-
+						<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/e-learning.svg">
+								<div class="industry-title">
+									<span>E-Learning</span>
+								</div>
 							</div>
 						</div>
-						<p class="tweet">
-							Nickunj has done an outstanding job working with our The Next Techie to construct a unified and unique brand logo. 
-						</p>
 					</div>
-				</div>	
 
-				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div class="review-box">
-						<div class="review-inner clearfix">
-						<img class="lozad img-fluid" data-src="assets/images/industries/elearning.png">
-							<div class="review-title">
-								<span>Food & Restaurant</span>
-
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/food.svg">
+								<div class="industry-title">
+									<span>Food & Restaurant</span>
+								</div>
 							</div>
 						</div>
-						<p class="tweet">
-							Nickunj has done an outstanding job working with our The Next Techie to construct a unified and unique brand logo.
-						</p>
 					</div>
-				</div>	
 
-				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div class="review-box">
-						<div class="review-inner clearfix">
-						<img class="lozad img-fluid" data-src="assets/images/industries/elearning.png">
-							<div class="review-title">
-								<span>Sport</span>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/gym.svg">
+								<div class="industry-title">
+									<span>Fitness</span>
+								</div>
 							</div>
 						</div>
-						<p class="tweet">
-							Nickunj has done an outstanding job working with our The Next Techie to construct a unified and unique brand logo. 
-						</p>
 					</div>
-				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div class="review-box">
-						<div class="review-inner clearfix">
-						<img class="lozad img-fluid" data-src="assets/images/industries/elearning.png">
-							<div class="review-title">
-								<span>NGO</span>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/heart.svg">
+								<div class="industry-title">
+									<span>Health & Wellness</span>
+								</div>
 							</div>
 						</div>
-						<p class="tweet">
-							Nickunj has done an outstanding job working with our The Next Techie to construct a unified and unique brand logo. 
-						</p>
 					</div>
-				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div class="review-box">
-						<div class="review-inner clearfix">
-						<img class="lozad img-fluid" data-src="assets/images/industries/elearning.png">
-							<div class="review-title">
-								<span>Travel & Tourism</span>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/ngo.svg">
+								<div class="industry-title">
+									<span>NGO</span>
+								</div>
 							</div>
 						</div>
-						<p class="tweet">
-							Nickunj has done an outstanding job working with our The Next Techie to construct a unified and unique brand logo. 
-						</p>
 					</div>
-				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div class="review-box">
-						<div class="review-inner clearfix">
-						<img class="lozad img-fluid" data-src="assets/images/industries/elearning.png">
-							<div class="review-title">
-								<span>Real Estate</span>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/realestate.svg">
+								<div class="industry-title">
+									<span>Reat Estate</span>
+								</div>
 							</div>
 						</div>
-						<p class="tweet">
-							Nickunj has done an outstanding job working with our The Next Techie to construct a unified and unique brand logo. 
-						</p>
 					</div>
-				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div class="review-box">
-						<div class="review-inner clearfix">
-						<img class="lozad img-fluid" data-src="assets/images/industries/elearning.png">
-							<div class="review-title">
-								<span>E-Commerce</span>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/sports.svg">
+								<div class="industry-title">
+									<span>Sports</span>
+								</div>
 							</div>
 						</div>
-						<p class="tweet">
-							Nickunj has done an outstanding job working with our The Next Techie to construct a unified and unique brand logo. 
-						</p>
 					</div>
-				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div class="review-box">
-						<div class="review-inner clearfix">
-						<img class="lozad img-fluid" data-src="assets/images/industries/elearning.png">
-							<div class="review-title">
-								<span>Any Enterprise</span>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/newspaper.svg">
+								<div class="industry-title">
+									<span>Media</span>
+								</div>
 							</div>
 						</div>
-						<p class="tweet">
-							Nickunj has done an outstanding job working with our The Next Techie to construct a unified and unique brand logo. 
-						</p>
+					</div>
+
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/startup.svg">
+								<div class="industry-title">
+									<span>Startup</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/travel.svg">
+								<div class="industry-title">
+									<span>Travel & Tourism</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-3 col-sm-4 col-12">
+						<div class="industry-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/industries/gaming.svg">
+								<div class="industry-title">
+									<span>Gaming</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 					</div>
 				</div>
 
@@ -811,10 +819,245 @@
 	</div>
 </section>
 
+<!-- INDUSTRIES We Serve Ends -->
+
+
+<!-- Technology We Work Starts -->
+
+<section id="INDUSTRIES">
+	<div class="container">
+		<div class="industry-cover">
+			<div class="row">
+
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="industry-header">
+								<span class="upper-bar"></span>
+								<h2 class="text-center">Technologies We Work</h2>
+								<p class="text-center">Innovate your Business with us. Business isn't size fit for all. Every industry requires a custom solution.</p>				
+							</div>
+						</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/HTML5.png">
+								<div class="industry-title">
+									<span>HTML</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/CSS3.png">
+								<div class="industry-title">
+									<span>CSS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/JavaScript.png">
+								<div class="industry-title">
+									<span>JavaScript</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/jquery-icon.png">
+								<div class="industry-title">
+									<span>JQuery</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/Bootstrap.png">
+								<div class="industry-title">
+									<span>Bootstrap</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/materialui.png">
+								<div class="industry-title">
+									<span>Material UI</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/Angular.png">
+								<div class="industry-title">
+									<span>Angular</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/React.png">
+								<div class="industry-title">
+									<span>React</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/Ionic.png">
+								<div class="industry-title">
+									<span>Ionic</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/Nodejs.png">
+								<div class="industry-title">
+									<span>Node js</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/Wordpress.png">
+								<div class="industry-title">
+									<span>Wordpress</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/ai-icon.png">
+								<div class="industry-title">
+									<span>Adobe Illustrator</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/Adobe_XD.png">
+								<div class="industry-title">
+									<span>Adobe XD</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/invision.png">
+								<div class="industry-title">
+									<span>Invision Studio</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="industry-box tech-box">
+							<div class="industry-inner clearfix">
+								<img class="lozad img-fluid" data-src="assets/images/icons/CORELDRAW.png">
+								<div class="industry-title">
+									<span>Adobe Illustrator</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+
+				
+
+			</div>
+		</div>
+	</div>
+</section>
+
 <!----------------------
-	Industry We Serve ENDS
+	Technology We Work ENDS
 ----------------------->
 
+
+<!----------------------
+	Contact Starts
+----------------------->
+<section id="CONTACT">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="contact-left">
+					<h4>Discuss your Idea with us!<i class="fas fa-level-down-alt"></i></h4>
+					<button class="btn btn-discuss"><i class="fab fa-whatsapp"></i></button>
+					<button class="btn btn-discuss"><i class="fab fa-skype"></i></button>
+					<button class="btn btn-discuss"><i class="fab fa-facebook-messenger"></i></button>
+					<button class="btn btn-discuss"><i class="fab fa-instagram"></i></button>
+				<hr />
+					<button class="btn btn-discuss"><i class="fab fa-facebook-f"></i></button>
+					<button class="btn btn-discuss"><i class="fab fa-twitter"></i></button>
+					<button class="btn btn-discuss"><i class="fab fa-linkedin-in"></i></button>
+					<button class="btn btn-discuss"><i class="fab fa-github"></i></button>
+
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="contact-right">
+					<h2>Contact us<i class="fas fa-level-down-alt"></i></h2>
+					<p><span>Email : </span><a href="#">nickunj.gurjar@gmail.com</a></p>
+					<p><span>Phone : </span><a href="#">+91 8839690523</a></p>
+					<!-- <button class="btn btn-discuss">Discuss your idea with us!</button> -->
+					<button class="btn btn-discuss"><i class="fas fa-envelope"></i></button>
+					<button class="btn btn-discuss"><i class="fas fa-phone"></i></button>
+					<button class="btn btn-getyoursite">Get your own Website</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!----------------------
+	Contact Ends
+----------------------->
 
 
 
@@ -822,7 +1065,7 @@
 
 <div id="chatbot">
 	<div class="chatbot-inner">
-		<button class="btn mybutton open-chatbot"><i class="far fa-comment-dots"></i></button>
+		<button class="btn open-chatbot btn-discuss"><i class="far fa-comment-dots"></i></button>
 		<div id="main" class="chatmain">
 			<span class="chat-head"><i class="far fa-hand-peace"></i>
 				 Hey! I'm Online . .</span>

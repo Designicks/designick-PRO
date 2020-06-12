@@ -51,7 +51,7 @@ button:focus {
     border: none;
     background: linear-gradient(to right, rgba(79,26,126,1) 0%, rgba(238,45,158,1) 100%);
     background: -webkit-linear-gradient(left, rgb(38, 53, 70) 0%, rgb(27, 84, 250) 100%);
-    transition: all 0.5s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
   }
   .mybutton:hover{
     color: #e7e7e7;
@@ -135,7 +135,7 @@ header .header-inner img{
   font-size: 26px;
 }
 
-.my-navbar ul li:hover i{
+.my-navbar ul li:hover i,.my-navbar ul li:active i,.my-navbar ul li:visited i{
   color: #a735fd;
   color: #FFDE00;
   color: #FEC72C;
@@ -205,7 +205,7 @@ header .header-inner img{
 
 }
 .intro-button-cover button.btn-getstarted{
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     background: none;
     transition: all 0.2s ease-in-out;
 }
@@ -909,7 +909,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 /*REVIEWS Starts*/
 #REVIEWS{
   padding-top: 6.2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 0rem;
   color: #2c3c50;
   background: #fff !important;
 }
@@ -937,14 +937,16 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 #REVIEWS .review-cover .review-box {
   border-radius: 12px;
   /*height: 315px;*/
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
   padding: 1.5rem;
   box-shadow: 0 7px 24px 0 rgba(0,0,0,.06);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 9px 0px;
   transition: all 0.2s ease-in-out;
 }
 #REVIEWS .review-cover .review-box:hover {
   cursor: pointer;
   border: 1px solid #2c3c50;
+  border: 1px solid #ddd;
 }
 #REVIEWS .review-cover .review-box:hover p.tweet i{
   color: #2c3c50;
@@ -988,6 +990,141 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 }
 /*REVIEWS Ends*/
 
+/*INDUSTRIES Starts*/
+#INDUSTRIES{
+   background: #fff;
+   padding: 6.2rem 0 3rem 0; 
+}
+#INDUSTRIES .industry-cover .industry-header .upper-bar {
+    padding: 5px;
+    height: 8px;
+    width: 50px;
+    border-top: 5px solid #a734fd;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.2s;
+  }
+  #INDUSTRIES .industry-cover .industry-box .industry-inner img{
+    width: 100%;
+    max-width: 70px; 
+    margin: 0 auto;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  #INDUSTRIES .industry-cover .industry-box .industry-inner .industry-title{
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+  }
+  #INDUSTRIES .industry-cover .industry-box{
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px; 
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 9px 0px;
+  transition: all 0.1s ease-in-out;
+}
+#INDUSTRIES .industry-cover .industry-box:hover{
+  cursor: pointer;
+  box-shadow:rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: 0 7px 24px 0 rgba(0,0,0,.06);
+  /*transform: scale(1.1);*/
+}
+#INDUSTRIES .industry-cover .industry-header h2{
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #2c3c50;
+  margin-bottom: 2rem;
+}
+.industry-header {
+    margin-bottom: 3rem;
+}
+/*INDUSTRIES Ends*/
+
+/*TECHNOLOGY Starts*/
+
+.industry-box.tech-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 190px;
+}
+.tech-box img{
+  max-width: 112px;
+}
+.tech-box .industry-title{
+  display: none;
+}
+/*TECHNOLOGY Ends*/
+
+/*CONTACT Starts*/
+#CONTACT{
+  background: #d2cbcb;
+  /*background: #a734fd;*/
+  padding:3rem 0; 
+}
+#CONTACT .contact-left,#CONTACT .contact-right{
+  background: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+}
+#CONTACT .btn-discuss{
+  display: flex;
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 20px;
+}
+#CONTACT .btn-getyoursite{
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #a734fd;
+  display: inline-block;
+}
+#CONTACT .btn-getyoursite span{
+  padding-right: 15px;
+}
+#CONTACT .btn-discuss span{
+  padding-left: 8px;
+  display: inline-block;
+}
+#CONTACT .contact-left .btn-discuss i{
+  font-size: 34px;
+  /*border-right: 2px dashed #a734fd;*/
+
+}
+.btn-discuss{
+  position: relative;
+  border: 0;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 9px 0px;
+}
+.btn-discuss:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 100%;
+  border: 2px dashed #a734fd;
+  animation: rotate 20s linear infinite;
+}
+#CONTACT .contact-left .btn-discuss:hover i {
+  color: #a734fd;
+}
+
+
+@keyframes rotate {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+/*CONTACT Ends*/
 
 
 /*CHAT BOT*/
@@ -1129,18 +1266,18 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   text-align: left;
 }
 #chatbot button.open-chatbot {
-  width: 68px;
+  width: 64px;
   border-radius: 40px;
-  padding: 8px 0px;
-  font-size: 35px;
+  padding: 6px 0px;
+  font-size: 36px;
   font-weight: 100;
-  color: #fff;
-  background: #a734fd;
+  color: #2c3c50;
+  background: #fff;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px 0px, rgba(0, 0, 0, 0.16) 0px 2px 32px 0px;
   transition: all 0.2s ease-in-out;
 }
 #chatbot button.open-chatbot:hover {
-  background: #2048b4;
+  color: #a734fd;
   box-shadow: #0000004a 0px 5px 40px;
 }
 #chatbot button.close-chatbot {
