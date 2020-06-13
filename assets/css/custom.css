@@ -13,6 +13,10 @@ body{
   text-decoration: none !important;
   list-style-type: none !important;
 }
+.container-fluid{
+  /*padding-left: 0;*/
+  /*padding-right: 0;*/
+}
 .row{
   margin:0px;
 }
@@ -116,7 +120,7 @@ header .header-inner img{
   font-family: poppins;
   font-size: 14px;
   font-weight: 500;
-  margin-right: 20px;
+  margin-right: 15px;
   color: #2c3c50;
   transition: all 0.3s ease-in-out;
 }
@@ -136,9 +140,9 @@ header .header-inner img{
 }
 
 .my-navbar ul li:hover i,.my-navbar ul li:active i,.my-navbar ul li:visited i{
-  color: #a735fd;
   color: #FFDE00;
   color: #FEC72C;
+  color: #a735fd;
 }
 .my-navbar ul li i{
   display: table;
@@ -319,6 +323,7 @@ header .header-inner img{
   list-style-type: none;
   text-decoration: none;
   font-size: 16px;
+  color: #2c3c50;
   border-bottom: 1px solid #c8adf9;
   transition: all 0.2s;
 }
@@ -329,10 +334,10 @@ header .header-inner img{
   margin-right: 14px;
 }
 .inner-nody.menu_div ul li:hover{
-  color: #FEC72C;
+ color: #a735fd;
 }
 .inner-nody.menu_div ul li:hover i{
-  color: #FEC72C;
+  color: #a735fd;
 }
 /*//menu//*/
 
@@ -438,7 +443,7 @@ input:checked + .slider:before {
 .need-box {
     border-radius: 10px;
     padding: 1rem 2rem;
-    min-height: 260px;
+    min-height: 240px;
     text-align: left;
     transition: all 0.2s ease-in-out;
     box-shadow: 0px 0px 38px #e8e8e8;
@@ -465,7 +470,7 @@ input:checked + .slider:before {
     transition: all 0.2s ease-in-out;
 }
 .need-box h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 /*??YOUR NEED*/
 
@@ -600,7 +605,7 @@ input:checked + .slider:before {
 
 /*portfolio NEW*/
 section#NEWPORTFOLIO {
-  padding-top: 7rem;
+  padding-top: 6.45rem;
   /*padding-bottom: 2rem;*/
   background: #fff !important;
 }
@@ -908,7 +913,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 
 /*REVIEWS Starts*/
 #REVIEWS{
-  padding-top: 6.2rem;
+  padding-top: 6.3rem;
   padding-bottom: 0rem;
   color: #2c3c50;
   background: #fff !important;
@@ -993,7 +998,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 /*INDUSTRIES Starts*/
 #INDUSTRIES{
    background: #fff;
-   padding: 6.2rem 0 3rem 0; 
+   padding: 6.3rem 0 3rem 0; 
 }
 #INDUSTRIES .industry-cover .industry-header .upper-bar {
     padding: 5px;
@@ -1042,6 +1047,9 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 /*INDUSTRIES Ends*/
 
 /*TECHNOLOGY Starts*/
+#INDUSTRIES.TECHNOLOGY{
+  padding-bottom: 6rem; 
+}
 
 .industry-box.tech-box{
     display: flex;
@@ -1059,24 +1067,69 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 
 /*CONTACT Starts*/
 #CONTACT{
-  background: #d2cbcb;
+  background: #f1f1f1;
+  position: relative;
   /*background: #a734fd;*/
-  padding:3rem 0; 
+  padding: 6.5rem 0;
+  padding-bottom: 1rem;
+}
+#CONTACT svg{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#CONTACT .contact-header .upper-bar {
+  padding: 5px;
+  height: 8px;
+  width: 50px;
+  border-top: 5px solid #a734fd;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.2s;
+}
+#CONTACT .contact-header h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #2c3c50;
+  margin-bottom: 2rem;
+}
+#CONTACT .contact-header p.contact-subhead {
+  padding: 0 1rem 3rem 1rem;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+
 }
 #CONTACT .contact-left,#CONTACT .contact-right{
-  background: #fff;
-  padding: 3rem;
-  border-radius: 20px;
+  position: relative;
+  z-index: 9;
+  background: #ffffffc7;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 9px 0px;
+}
+#CONTACT .contact-left h4,#CONTACT .contact-right h2{
+  margin-bottom: 2rem;
+}
+#CONTACT .contact-left h4 i{
+  display: inline-block;
+  margin-left: 10px;
+}
+.social-btn-cover{
+
 }
 #CONTACT .btn-discuss{
-  display: flex;
-  display: inline-block;
-  font-size: 20px;
-  margin-right: 20px;
+ display: inline-block;
+  font-size: 18px;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 #CONTACT .btn-getyoursite{
   background: #fff;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0;
   border-radius: 10px;
   border: 2px solid #a734fd;
   display: inline-block;
@@ -1089,15 +1142,19 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   display: inline-block;
 }
 #CONTACT .contact-left .btn-discuss i{
-  font-size: 34px;
+  font-size: 30px;
   /*border-right: 2px dashed #a734fd;*/
-
+  padding: 2px 0px 0px 0px;
+}
+#CONTACT .contact-right .btn-discuss i{
+  font-size: 24px;
+  padding: 4px 4px 0px 2px;
 }
 .btn-discuss{
   position: relative;
   border: 0;
-  height: 4rem;
-  width: 4rem;
+  height: 3.8rem;
+  width: 3.8rem;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -1115,8 +1172,20 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   border: 2px dashed #a734fd;
   animation: rotate 20s linear infinite;
 }
-#CONTACT .contact-left .btn-discuss:hover i {
+#CONTACT .contact-left .btn-discuss:hover i,#CONTACT .contact-right .btn-discuss:hover i {
   color: #a734fd;
+}
+.contact-right{
+  padding-bottom: 1rem !important;
+}
+.contact-right p{
+  margin-bottom: 10px;
+}
+.contact-right p.phone{
+  margin-bottom: 10px;
+}
+.contact-right p.copyright a{
+  font-weight: 600;
 }
 
 
@@ -1266,10 +1335,10 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   text-align: left;
 }
 #chatbot button.open-chatbot {
-  width: 64px;
+  width: 61px;
   border-radius: 40px;
   padding: 6px 0px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 100;
   color: #2c3c50;
   background: #fff;
@@ -1300,9 +1369,9 @@ button.close-chatbot.focus,button.close-chatbot:focus {
 
 
 @media only screen and (max-width: 1340px){
-  #myVideo {
+/*  #myVideo {
     max-width: 168% !important;
-  }     
+  } */    
 }
 
 
@@ -1316,14 +1385,14 @@ button.close-chatbot.focus,button.close-chatbot:focus {
 }
 
 @media only screen and (max-width: 768px){
-  #myVideo{
+  /*#myVideo{
     top: 0 !important;
     max-width: 320% !important;
     z-index: -100 !important;
     min-height: 100% !important;
     left: auto !important;
     right: auto !important;
-  }
+  }*/
   header .header-img-right1 {
     margin-top: 10px;
   }
@@ -1353,7 +1422,9 @@ button.close-chatbot.focus,button.close-chatbot:focus {
     margin-top: -30px;
     margin-bottom: 30px;
   }
-
+  #INDUSTRIES{
+    padding: 1.2rem 0 1rem 0;
+  }
 
   #portfolio .portfolio-inner-right .row > div {
     padding: 16px 0;
@@ -1404,6 +1475,13 @@ button.close-chatbot.focus,button.close-chatbot:focus {
   #port-mobile-tab .nav-link >p {
     font-size: 14px; 
   }
+  section#CONTACT .row > div {
+    padding: 0;
+  }
+  #CONTACT .contact-left,#CONTACT .contact-right{
+  padding: 1.5rem 1rem;
+}
+
 
   /*//portfolio page*/
   #portfolio .portfolio-cover > .row >div {
