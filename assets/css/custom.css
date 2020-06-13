@@ -1218,7 +1218,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   bottom: 23px;
   right: 28px;
   width: 280px;
-  z-index: 99;
+  z-index: 99999;
 }
 #chatbot .chatbot-inner span { 
   color: rgb(36, 17, 119); 
