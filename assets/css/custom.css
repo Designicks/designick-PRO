@@ -1057,8 +1057,8 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
     justify-content: center;
     min-height: 190px;
 }
-.tech-box img{
-  max-width: 112px;
+.technology-stack{
+  padding: 0 6rem; 
 }
 .tech-box .industry-title{
   display: none;
@@ -1424,6 +1424,9 @@ button.close-chatbot.focus,button.close-chatbot:focus {
   }
   #INDUSTRIES{
     padding: 1.2rem 0 1rem 0;
+  }
+  .technology-stack{
+    padding: 0rem 0rem; 
   }
 
   #portfolio .portfolio-inner-right .row > div {
