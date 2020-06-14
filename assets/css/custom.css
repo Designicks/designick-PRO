@@ -610,7 +610,7 @@ input:checked + .slider:before {
 /*portfolio NEW*/
 section#NEWPORTFOLIO {
   padding-top: 6.45rem;
-  /*padding-bottom: 2rem;*/
+  padding-bottom: 4rem;
   background: #fff !important;
 }
 section#NEWPORTFOLIO .portfolio-header span.upper-bar{
@@ -1071,11 +1071,12 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 
 /*CONTACT Starts*/
 #CONTACT{
-  background: #f1f1f1;
+  /*background: #f1f1f1;*/
   position: relative;
-  /*background: #a734fd;*/
+  background: #2c3c50;
   padding: 6.5rem 0;
   padding-bottom: 1rem;
+  color: #fff;
 }
 #CONTACT svg{
   position: absolute;
@@ -1094,7 +1095,6 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 #CONTACT .contact-header h2 {
   font-size: 2.3rem;
   font-weight: 600;
-  color: #2c3c50;
   margin-bottom: 2rem;
 }
 #CONTACT .contact-header p.contact-subhead {
@@ -1102,16 +1102,12 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
-
 }
 #CONTACT .contact-left,#CONTACT .contact-right{
   position: relative;
   z-index: 9;
-  background: #ffffffc7;
   padding: 3rem 2rem;
-  border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 9px 0px;
 }
 #CONTACT .contact-left h4,#CONTACT .contact-right h2{
   margin-bottom: 2rem;
@@ -1123,28 +1119,78 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 .social-btn-cover{
 
 }
-#CONTACT .btn-discuss{
- display: inline-block;
-  font-size: 18px;
+#CONTACT .btn-social{
+  display: inline-block;
+  width: 52px;
+  height: 52px;
   margin-right: 6px;
   margin-bottom: 10px;
   margin-top: 10px;
+  background: #fdfdfd;
+  border-radius: 50px;
 }
-#CONTACT .btn-getyoursite{
-  background: #fff;
-  padding: 0.6rem 1rem;
-  margin: 0.4rem 0;
+#CONTACT .btn-social i{
+  color: #2c3c50;
+
+}
+#CONTACT .btn-social{
+  color: #fff;
+  font-size: 27px;
+}
+#CONTACT .btn-social:hover{
+/*box-shadow: 0 0 0 0.2rem #FFF;*/
+
+}
+#CONTACT .btn-social:hover i{
+  color: #a734fd;
+}
+#CONTACT.CalltoAction .btn-getyoursite{
+  background: #a734fd;
+  padding: 1rem 2.3rem;
+  margin: 1.4rem 12px;
   border-radius: 10px;
-  border: 2px solid #a734fd;
+  border: 1px solid #a734fd;
+  color: #fff;
   display: inline-block;
 }
-#CONTACT .btn-getyoursite span{
-  padding-right: 15px;
+#CONTACT.CalltoAction{
+  padding-bottom: 5rem;
 }
-#CONTACT .btn-getyoursite:hover{
-  background: #a734fd;
+#CONTACT.CalltoAction .contact-header h2 span{
+  font-weight: lighter !important;
+  font-size: 30px;
+  display: inline-block;
+  padding: 0 0.6rem;
+}
+#CONTACT.CalltoAction .btn-getyoursite:hover{
+  background: #fff;
+  color: #a734fd;
+  box-shadow: 0px 0px 9px 3px rgb(31, 42, 56);
+}
+#CONTACT.CalltoAction .btn-getyoursite:focus{
+box-shadow: 0px 0px 9px 3px rgb(31, 42, 56);
+}
+
+#CONTACT.CalltoAction .btn-getintouch{
+  padding: 1rem 2.3rem;
+  margin: 1.4rem 12px;
+  border-radius: 10px;
+  border: 1px solid #fff;
   color: #fff;
+  display: inline-block;
 }
+#CONTACT.CalltoAction .btn-getintouch:hover{
+  background: #fff;
+  color: #2c3c50;
+  box-shadow: 0px 0px 9px 3px rgb(31, 42, 56);
+}
+#CONTACT.CalltoAction .btn-getintouch:focus{
+box-shadow: 0px 0px 9px 3px rgb(31, 42, 56);
+}
+
+
+
+
 #CONTACT .btn-discuss span{
   padding-left: 8px;
   display: inline-block;
@@ -1189,12 +1235,32 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
 .contact-right p{
   margin-bottom: 10px;
 }
+.contact-right p a{
+  color: #fff;
+}
 .contact-right p.phone{
   margin-bottom: 10px;
 }
-.contact-right p.copyright a{
-  font-weight: 600;
+#CONTACT .footer{
+  position: relative;
+  z-index: 999;
 }
+#CONTACT .footer span{
+  display: inline-block;
+}
+#CONTACT .footer span.copyright{
+  font-weight: 400;
+  float: left; 
+}
+#CONTACT .footer span.madeby a{
+  font-weight: 600;
+  color: #2c3c50;
+}
+#CONTACT .footer span.madeby{
+  margin-right: 3.5rem;
+  float: right;
+}
+
 
 
 @keyframes rotate {
