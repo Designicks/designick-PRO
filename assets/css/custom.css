@@ -1079,7 +1079,7 @@ box-shadow: 0px 0px 9px 3px rgb(31, 42, 56);
     transition: all 0.2s ease-in-out;
   }
   #INDUSTRIES .industry-cover .industry-box .industry-inner .industry-title{
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     transition: all 0.2s ease-in-out;
   }
@@ -1115,7 +1115,9 @@ box-shadow: 0px 0px 9px 3px rgb(31, 42, 56);
 #INDUSTRIES.TECHNOLOGY .industry-cover .row > div:nth-child(2) {
   padding: 0;
 }
-
+.industry-cover .row > div > .row > div {
+  padding: 0;
+}
 .industry-box.tech-box{
   display: flex;
   flex-direction: column;
@@ -1549,7 +1551,7 @@ button.close-chatbot.focus,button.close-chatbot:focus {
     margin-bottom: 0;
   }
   #solution .solution-carousel .owl-item .solution-item {
-    height: 195px;
+    height: 220px;
     padding: 1rem;
   }
   #solution .solution-carousel .owl-item{
