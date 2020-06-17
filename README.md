@@ -1,2 +1,2 @@
 # designickPRO
- Designick PRO- A Desktop Version
+DESIGNICK PRO - The Virtual IT Solution & Freelancers Hub
