@@ -1,2 +1,3 @@
 # designickPRO
-DESIGNICK PRO - The Virtual IT Solution & Freelancers Hub
+#Designick Pro
+DESIGNICK PRO - The Virtual IT Solutions & Freelancer's Hub
