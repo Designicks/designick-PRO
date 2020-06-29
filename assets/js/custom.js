@@ -65,7 +65,7 @@ const alternative = [
   "hello",
   "Go on...",
   "Bro...",
-  "Try again",
+  "How can i help you?",
   "I'm listening..."
 ];
 
