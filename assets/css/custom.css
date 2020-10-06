@@ -155,7 +155,6 @@ header .header-inner img{
 .my-navbar ul button.goto-mobile-version{
   margin-top: 4px;
   padding: 10px 20px;
-  float: right;
 }
 .my-navbar button.btn.mybutton.goto-mobile-version i {
     font-size: 22px;
@@ -1774,3 +1773,12 @@ animation-duration: 11s;
     font-size: 3rem;
   }
 }          
+
+.btn_fullscreen {
+  margin-top: 4px;
+  display: inline-block;
+}
+.btn_fullscreen i{
+  padding-top: 2px;
+  font-size: 1.2rem;
+}
