@@ -1782,3 +1782,17 @@ animation-duration: 11s;
   padding-top: 2px;
   font-size: 1.2rem;
 }
+
+/* fb Chatbot */
+.fb_dialog .fb_dialog_content>iframe{
+  transform: scale(0.9);
+  box-shadow: 0 7px 21px 0 rgba(0, 0, 0, .25) !important;
+}
+.fb_dialog .fb_dialog_content svg circle[fill="#0084FF"]{
+  fill: #354fe3;
+  fill: #fff;
+} 
+#facebook >svg>svg svg g[fill="#0084FF"]{
+  fill:#2c3c50;
+}
+/* fb Chatbot */
