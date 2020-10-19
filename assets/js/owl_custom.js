@@ -47,7 +47,7 @@ $(document).ready(function() {
     fluidSpeed:100,
     slideSpeed: 8000,
     rewind:false,
-    autoplay:false,
+    autoplay:true,
     autoplayTimeout:3000,
     responsive:{
       0:{
