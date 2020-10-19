@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/custom.js"></script> -->
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNZSK6NZ9J"></script>
@@ -75,6 +75,34 @@
     </style>
   </head>
   <body>
+    <!-- fb chatbot -->
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+			FB.init({
+			  xfbml            : true,
+			  version          : 'v8.0'
+			});
+		  };
+  
+		  (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+  
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat"
+		  attribution=install_email
+		  page_id="447000098651754"
+	logged_in_greeting="Hello User! How can we help you? DM us on +91 8839690523"
+	logged_out_greeting="Hello User! How can we help you? DM us on +91 8839690523">
+		</div>
+    <!-- fb chatbot -->
+    
     <header>
       <div class="container-fluid pr-0 pl-0">
         <div class="header-inner navigation" onClick="window.scroll">
@@ -798,7 +826,7 @@
     <span class="fa fa-arrow-up" onClick="topFunction()" id="btntotop" title="Go to top" style="display: block;"></span>
   </a>
   <!-- MOVE TO TOP -->
-    <div id="chatbot">
+    <!-- <div id="chatbot">
     <div class="chatbot-inner">
       <button class="btn open-chatbot btn-discuss"><i class="far fa-comment-dots"  title="Lets Talk"></i></button>
       <div id="main" class="chatmain">
@@ -813,7 +841,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
     <script>
       // init js for lozad
       const observer = lozad();
@@ -824,15 +852,15 @@
     $('.theme-changer-popup').toggleClass('setrightpos');
     // $('.theme-changer-popup').removeClass('unsetrightpos');
     });
-    $('.open-chatbot').on('click', function(){
-    $('.chatmain').toggleClass('chatpopup');
-    $('.open-chatbot').css("display", "none");
-    });
+    // $('.open-chatbot').on('click', function(){
+    // $('.chatmain').toggleClass('chatpopup');
+    // $('.open-chatbot').css("display", "none");
+    // });
 
-    function closeChat() {
-    document.getElementById("main").className += 'chatpopup';
-    $('.open-chatbot').css("display", "block");
-    }
+    // function closeChat() {
+    // document.getElementById("main").className += 'chatpopup';
+    // $('.open-chatbot').css("display", "block");
+    // }
     </script>
     <script>
     //disable content js
@@ -853,6 +881,6 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/owl_custom.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/custom.js"></script> -->
   </body>
 </html>

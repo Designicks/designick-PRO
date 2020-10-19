@@ -35,8 +35,8 @@
 
 
 $(document).ready(function() {
-  $('.port-mobile-owl').owlCarousel({
-     items: 3,
+  $('.port-mobile-owlnew').owlCarousel({
+     items: 1,
     loop: true,              
     center: true,
     dots: false,
@@ -47,19 +47,50 @@ $(document).ready(function() {
     fluidSpeed:100,
     slideSpeed: 8000,
     rewind:false,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:3000,
     responsive:{
       0:{
           items:1
       },
       600:{
-          items:3
+          items:1
       },
       1000:{
-          items:4
+          items:2
       }
     }
+ })
+});
+
+ $(document).ready(function() {
+    $('.port-mobile-owl').owlCarousel({
+       items: 1,
+      loop: true,              
+      center: true,
+      dots: false,
+      nav: true,
+      margin:20,
+      autoplayHoverPause:true,
+      smartSpeed:2000,
+      fluidSpeed:100,
+      slideSpeed: 8000,
+      rewind:false,
+      autoplay:true,
+      autoplayTimeout:3000,
+      responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+      }
+   });
+ 
  });
 
   $('.port-web-owl').owlCarousel({
@@ -88,5 +119,3 @@ $(document).ready(function() {
       }
     }
  });
-
-});
