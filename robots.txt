@@ -1,17 +1,2 @@
 User-agent: Googlebot-Image
-Disallow: /assets/images/reviews/amit.jpg
-
-User-agent: Googlebot-Image
-Disallow: /assets/images/reviews/gopal.jpg
-
-User-agent: Googlebot-Image
-Disallow: /assets/images/reviews/sharad.jpg
-
-User-agent: Googlebot-Image
-Disallow: assets/images/reviews/sunanda.jpg
-
-User-agent: Googlebot-Image
-Disallow: assets/images/reviews/surendrap.jpeg
-
-User-agent: Googlebot-Image
-Disallow: assets/images/reviews/vishal.jpg
+Disallow: /assets/images/reviews/
