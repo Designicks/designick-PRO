@@ -1,7 +1,7 @@
  $('.solution-carousel').owlCarousel({
         loop:true,
         item:3,
-        margin:12,
+        margin:20,
         nav:true,
         center: true,
         dots: false,
@@ -41,7 +41,7 @@ $(document).ready(function() {
     center: true,
     dots: false,
     nav: true,
-    margin:20,
+    margin:30,
     autoplayHoverPause:true,
     smartSpeed:2000,
     fluidSpeed:100,

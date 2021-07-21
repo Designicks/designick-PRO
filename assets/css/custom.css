@@ -115,7 +115,8 @@ header .header-inner.navigation{
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 header .header-inner img{
-  width: 90px;
+  width: 100%;
+  max-width: 200px;
 }
 
 .my-navbar {
@@ -125,6 +126,7 @@ header .header-inner img{
 }
 .my-navbar ul{
   padding: 0;
+  margin-bottom: 0;
 }
 .my-navbar ul li{
   padding: 10px;
@@ -146,10 +148,10 @@ header .header-inner img{
   transition: all 0.2s ease-in-out;
 }
 .inner-popup .p-header .goto-mobile-version.mybutton{
-    padding: 1rem 2rem;
+    padding: 0.2rem 0.4rem;
 }
 .my-navbar ul button.goto-mobile-version{
-  margin-top: 4px;
+  margin-top: 2px;
   padding: 10px 20px;
 }
 .my-navbar button.btn.mybutton.goto-mobile-version i {
@@ -266,10 +268,10 @@ header .header-inner img{
 
 .theme-changer-popup .outer-popup .icon {
     display: none;
-    left: -65px;
+    left: -58px;
     border-radius: 50% 0 0 50%;
-    top: 20px;
-    padding: 12px 13px 12px 12px;
+    top: 15px;
+    padding: 8px 12px 8px 8px;
     z-index: 1;
     position: absolute;
     background-color: rgba(250, 250, 250, 0.95);
@@ -497,13 +499,14 @@ input:checked + .slider:before {
   margin-bottom: 2rem;
 }    
 #solution .solution-carousel .owl-stage-outer {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 #solution .solution-carousel .owl-stage {
   padding: 2rem 0px;
 }
 #solution .solution-carousel .owl-item{
-  margin-left: -3px;  
+  margin-left: -3px;
+  cursor: pointer;
 }
 #solution .solution-carousel .owl-item .solution-item img {
   max-width: 150px;
@@ -771,7 +774,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 40px;
   background: none !important;
   color:#fff !important;
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
   /* background-image: url(../images/images.png) !important; */
   background-position: fixed !important;
   background-repeat: no-repeat !important;

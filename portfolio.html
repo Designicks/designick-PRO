@@ -75,68 +75,65 @@
     </style>
   </head>
   <body>
-    <!-- fb chatbot -->
-		<!-- Load Facebook SDK for JavaScript -->
-		<div id="fb-root"></div>
-		<script>
-		  window.fbAsyncInit = function() {
-			FB.init({
-			  xfbml            : true,
-			  version          : 'v8.0'
-			});
-		  };
-  
-		  (function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-  
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		  attribution=install_email
-		  page_id="447000098651754"
-	logged_in_greeting="Hello User! How can we help you? DM us on +91 8839690523"
-	logged_out_greeting="Hello User! How can we help you? DM us on +91 8839690523">
-		</div>
-    <!-- fb chatbot -->
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "110068381281716");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v11.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
     
     <header>
       <div class="container-fluid pr-0 pl-0">
         <div class="header-inner navigation" onClick="window.scroll">
-          <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2">
-              <form style="" action="https://designicks.github.io/designickpro" method="get" title="Designick">
-              <img data-src="assets/images/designick_PRO.png" class="img-fluid lozad" alt="DesignckPro Logo">
-              </form>
-            </div>
-            <div class="col-lg-10 col-md-10 col-sm-12">
-              <div class="my-navbar">
-                <ul>
-                  <li><a href="https://designick.com"><i class="fas fa-home"></i>Home</a></li>
-                  <li><a href="https://designick.com"><i class="far fa-address-card"></i>About</a></li>
-                  <li><a href="https://designick.com"><i class="fas fa-store"></i>Services</a></li>
-                  <li><a href="https://designick.com"><i class="fab fa-dashcube"></i>Portfolio</a></li>
-                  <li><a href="https://designick.com"><i class="fas fa-feather-alt"></i>Reviews</a></li>
-                  <li><a href="https://designick.com"><i class="fas fa-industry"></i>Industries</a></li>
-                  <li><a href="https://designick.com"><i class="fas fa-layer-group"></i>Plans</a></li>
-                  <li><a href="#Contact"><i class="far fa-user"></i>Contact</a></li>
-                  
-                 <!-- <form style="display: inline" action="https://designicks.github.io/designickpro" target="_blank" method="get">
-                  <button class="btn mybutton goto-mobile-version" title="Goto Mobile App"><i class="far fa-hand-point-right"></i> &nbsp; &nbsp;<i class="fas fa-mobile-alt"></i></button>
-                </form> -->
-                  <div class="header_btns_cover float-right">
-                    <button class="btn btn_fullscreen" ><i class="fas fa-expand"></i></button>    
-                    <form style="display: inline" action="https://designicks.github.io/designickpro" target="_blank" method="">
-                      <button class="btn mybutton goto-mobile-version" title="Goto Mobile App"><i class="far fa-hand-point-right"></i> &nbsp; &nbsp;<i class="fas fa-mobile-alt"></i></button>
-                    </form>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
+         <div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-12 pl-0">
+							<form action="https://designicks.github.io/designickpro" method="" title="Designick">
+				              <img data-src="assets/images/designick_Logo2.0.png" src="assets/images/designick_Logo2.0.png" class="img-fluid lozad" alt="DesignckPro Logo">
+				             </form>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-12 pr-0">
+								<div class="my-navbar ml-3">
+									<ul>
+										<li><a href="https://designick.com/#HEADER"><i class="fas fa-home"></i>Home</a></li>
+										<li><a href="https://designick.com/#yourneed"><i class="far fa-address-card"></i>About</a></li>
+										<li><a href="https://designick.com/#solution"><i class="fas fa-store"></i>Services</a></li>
+										<li><a href="https://designick.com/#NEWPORTFOLIO"><i class="fab fa-dashcube"></i>Portfolio</a></li>
+										<li><a href="https://designick.com/#REVIEWS"><i class="fas fa-feather-alt"></i>Reviews</a></li>
+										<li><a href="https://designick.com/#INDUSTRIES"><i class="fas fa-industry"></i>Industries</a></li>
+										<!-- <a href=""><li><i class="fas fa-layer-group"></i>Plans</li></a> -->
+										<li><a href="https://designick.com/#CONTACT"><i class="far fa-user"></i>Contact</a></li>
+										
+										<div class="header_btns_cover float-right mt-1">
+											<button class="btn btn_fullscreen" ><i class="fas fa-expand"></i></button>		
+											<!-- <form style="display: inline" action="https://designicks.github.io/designickpro" target="_blank" method="">
+												<button class="btn mybutton goto-mobile-version" title="Goto Mobile App"><i class="far fa-hand-point-right"></i> &nbsp; &nbsp;<i class="fas fa-mobile-alt"></i></button>
+											</form> -->
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
         </div>
         
       </div>
@@ -212,9 +209,9 @@
                 </div>
               </div>
               
-              <div class="port-content-full container">
+              <div class="port-content-full container-fluid px-0">
                 <!-- portfolio / Android Mobile slider code -->
-                <section id="" class="container" >
+                <section id="" class="container-fluid px-0" >
                   <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                       <div class="owl-carousel owl-theme port-mobile-owl" id="">
@@ -303,9 +300,9 @@
                 </div>
               </div>
               
-              <div class="port-content-full container">
+              <div class="port-content-full container-fluid px-0">
                 <!-- portfolio / Web App slider code -->
-                <section id="" class="container" >
+                <section id="" class="container-fluid px-0" >
                   <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                       <div class="owl-carousel owl-theme port-mobile-owl" id="">
@@ -418,9 +415,9 @@
                     </div>
                   </div>
                   
-                  <div class="port-content-full container">
+                  <div class="port-content-full container-fluid px-0">
                     <!-- portfolio / Web App slider code -->
-                    <section id="" class="container" >
+                    <section id="" class="container-fluid px-0" >
                       <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                           <div class="owl-carousel owl-theme port-web-owl" id="">
@@ -519,11 +516,11 @@
                     </div>
                   </div>
                   
-                  <div class="port-content-full container-fluid">
+                  <div class="port-content-full container-fluid px-0">
                     <!-- portfolio / IOS Mobile slider code -->
                     <section id="port-mobile-owl-ios" class="container-fluid">
                       <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 px-0">
                           
                           <div class="my-row">
                             <div class="my-column">
@@ -765,7 +762,7 @@
                   </form>
                   
                   
-                  <form style="display: inline" target="_blank" action="https://www.facebook.com/designick44/inbox" method="get">
+                  <form style="display: inline" target="_blank" action="https://www.facebook.com/designickpro/inbox" method="get">
                   <button class="btn btn-social"><i class="fab fa-facebook-messenger"></i></button>
                   </form>
                 
@@ -775,7 +772,7 @@
 
                   <hr />
                   
-                  <form style="display: inline" target="_blank" action="https://www.facebook.com/nikunj.gurjar.35/" method="get">
+                  <form style="display: inline" target="_blank" action="https://www.facebook.com/nikunj.gurjar.79" method="get">
                   <button class="btn btn-social"><i class="fab fa-facebook-f"></i></button>
                   </form>
                   
