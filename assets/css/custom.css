@@ -114,9 +114,15 @@ header .header-inner.navigation{
   background: #ffffffd4;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
+header .header-inner .logo-cover{
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
 header .header-inner img{
   width: 100%;
-  max-width: 200px;
+  max-width: 170px;
+  margin: 0 4px;
 }
 
 .my-navbar {
@@ -270,7 +276,7 @@ header .header-inner img{
     display: none;
     left: -58px;
     border-radius: 50% 0 0 50%;
-    top: 15px;
+    top: 5px;
     padding: 8px 12px 8px 8px;
     z-index: 1;
     position: absolute;
