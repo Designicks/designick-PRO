@@ -91,6 +91,7 @@ header{
   background-repeat: no-repeat;*/
   background: #00000082;
   background: #2c3c5099;
+  background: #4893f0;
   background: #2c3c50;
 
 
@@ -1024,7 +1025,7 @@ box-shadow: 0px 0px 9px 3px rgb(31, 42, 56);
 }
 #REVIEWS .review-cover .review-box img{
   max-width: 100%;
-  height: auto;
+  max-height: 40px;
   border-radius: 40px;
   width: 40px;
   float: left;
@@ -1045,7 +1046,12 @@ box-shadow: 0px 0px 9px 3px rgb(31, 42, 56);
   padding: 14px 0; 
   font-size: 14px;
   color: #2c3c50;
-
+}
+#REVIEWS .a-few-more{
+  border-radius: 10px;
+  opacity: 0.4;
+  width: 100%;
+  max-width: 120px;
 }
 /*REVIEWS Ends*/
 
@@ -1180,6 +1186,9 @@ box-shadow: 0px 0px 9px 3px rgb(31, 42, 56);
 #CONTACT .contact-left h4 i{
   display: inline-block;
   margin-left: 10px;
+}
+#CONTACT .contact-left hr{
+  border: 0;
 }
 #CONTACT .btn-social{
   display: inline-block;
